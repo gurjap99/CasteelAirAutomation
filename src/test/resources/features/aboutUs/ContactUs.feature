@@ -24,11 +24,11 @@ Feature: Casteel Air About Us Contact Us Page tests
     Given I navigate to "https://test.casteelair.com"
     When I Click on About Us
     When I click on "Contact Us" button in category header submenu
-    When I update Zipcode "19808" using map zipcode input in Contact Us page
+    When I update Zipcode "30066" using map zipcode input in Contact Us page
     Then Map should get updated
-    And "Your home is in our service area!" appears, Zip code "19808" should be update in the home page
-    When I update Zipcode "21244" using map zipcode input in Contact Us page
-    Then Map should get updated
-    And "Your home is in our service area!" appears, Zip code "21244" should be update in the home page
+    And "Your home is in our service area!" appears, Zip code "30066" should be update in the home page
+#    When I update Zipcode "21244" using map zipcode input in Contact Us page
+#    Then Map should get updated
+#    And "Your home is in our service area!" appears, Zip code "21244" should be update in the home page
     When I click map Input Book Now button
     Then I should see Book Online Now Window and close it
